@@ -1,9 +1,11 @@
 import styles from "./Header.module.css"
 
+import spellCasterLogo from '../img/SpellCasterLogo.svg'
+
 export function Header () {
     return (
         <header className={styles.header}>
-            <strong>My MTG Decks and friends reviews</strong>
+            <img src={spellCasterLogo} alt="Spellcaster guild logo" />
         </header>
     )
 }
