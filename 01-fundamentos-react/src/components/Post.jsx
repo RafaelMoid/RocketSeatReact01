@@ -20,8 +20,14 @@ export function Post(props) {
                     <li>18 Pantano</li>
                     <li>18 Ilha</li>
                 </ul>
-                
             </div>
+            <form className={styles.commentForm}>
+                <strong>Deixe seu comentario</strong>
+                <textarea placeholder='Deixe um comentario' />
+                <footer>
+                    <button type='submit'>Publicar</button>
+                </footer>
+            </form>
         </article>
     )
 }
