@@ -3,13 +3,10 @@ import styles from "./Comment.module.css";
 import { Avatar } from "./Avatar";
 
 export function Comment({ content, deleteComment }) {
-
-    // Função para deletar comentario
-    function deletarComentario() {
-        console.log("Deletar");
-
-        deleteComment(content);
-    }
+  // Função para deletar comentario
+  function deleteComments() {
+    deleteComment(content);
+  }
 
   return (
     <div className={styles.comment}>
@@ -27,7 +24,7 @@ export function Comment({ content, deleteComment }) {
               <time dateTime="2024-07-07">Cerca de 1h atrás</time>
             </div>
 
-            <button onClick={deletarComentario} title="Excluir comentario">
+            <button onClick={deleteComments} title="Excluir comentario">
               <Trash size={24} />
             </button>
           </header>
